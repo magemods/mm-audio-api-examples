@@ -5,24 +5,25 @@
 
 # Unique ID of this mod. Pick something long enough that it'll never be the same as any other mod.
 # The name displayed in the mod management menu is separate from this so this doesn't need to be human readable.
-id = "magemods_"
+id = "magemods_audio_api_examples"
 
 # Version of this mod.
 version = "1.0.0"
 
 # The name that will show up for this mod in the mod menu. This should be human readable.
-display_name = ""
+display_name = "Custom Audio Test"
 
 # The description that will show up when this mod is displayed in the mod menu. This should be human readable.
 description =  """
+Simple mod demonstrating various features of the Audio API
 """
 
 # A short description that will show up in this mod's entry in the mod list. This should be human readable and kept short
 # to prevent it from being cut off due to the limited space.
-short_description = ""
+short_description = "Audio API Examples"
 
 # Website URL for Thunderstore
-website_url = ""
+website_url = "https://github.com/magemods/mm-audio-api-examples"
 
 # Authors of this mod.
 authors = [ "magemods" ]
@@ -35,6 +36,7 @@ minimum_recomp_version = "1.2.0"
 
 # Dependency mods. Each entry is the mod's ID and then an optional minimum version of the dependency mod.
 dependencies = [
+    "magemods_audio_api"
 ]
 
 # Native libraries (e.g. DLLs) and the functions they export.
@@ -48,7 +50,7 @@ native_libraries = [
 elf_path = "build/mod.elf"
 
 # Output mod filename.
-mod_filename = "magemods_"
+mod_filename = "magemods_audio_api_examples"
 
 # Reference symbol files.
 func_reference_syms_file = "Zelda64RecompSyms/mm.us.rev1.syms.toml"
@@ -56,5 +58,5 @@ data_reference_syms_files = [ "Zelda64RecompSyms/mm.us.rev1.datasyms.toml", "Zel
 
 # Additional files to include in the mod.
 additional_files = [
-#    "thumb.dds"
+    "thumb.dds"
 ]
