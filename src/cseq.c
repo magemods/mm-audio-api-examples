@@ -40,20 +40,20 @@ RECOMP_CALLBACK("magemods_audio_api", AudioApi_Init) void my_mod_on_init() {
     cseq_loop(layer1, 2);
     cseq_notedv(layer1, 29, 48, 50);
     cseq_notevg(layer1, 27, 48, 0);
-    cseq_notedvg(layer1, 26, 96, 50, 128);
+    cseq_notedvg(layer1, 25, 96, 50, 128);
+    cseq_loopend(layer1);
+
+    cseq_loop(layer1, 4);
+    cseq_notedvg(layer1, 25, 24, 50, 128);
     cseq_loopend(layer1);
 
     cseq_loop(layer1, 4);
     cseq_notedvg(layer1, 27, 24, 50, 128);
     cseq_loopend(layer1);
 
-    cseq_loop(layer1, 4);
-    cseq_notedvg(layer1, 29, 24, 50, 128);
-    cseq_loopend(layer1);
-
     cseq_notedv(layer1, 29, 48, 50);
     cseq_notevg(layer1, 27, 48, 0);
-    cseq_notedv(layer1, 26, 72, 50);
+    cseq_notedv(layer1, 25, 72, 50);
     cseq_section_end(layer1);
 
     cseq_compile(root, 0);
