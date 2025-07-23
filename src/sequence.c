@@ -5,7 +5,7 @@
 
 INCBIN(sequence, "src/audio/DetectiveSky612-DanceOfDeath.zseq");
 
-s32 newSeqId;
+static s32 newSeqId;
 
 RECOMP_CALLBACK("magemods_audio_api", AudioApi_Init) void my_mod_on_init_sequence_test() {
 
